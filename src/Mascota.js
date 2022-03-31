@@ -5,8 +5,11 @@ class Mascota extends React.Component {
 		super(props);
 	}
 	render(){
+		// https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#desestructuraci%C3%B3n_de_objetos
+		const {name, tipo, age} = this.props;
+
 		return(
-				<p>Nombre: {this.props.name}, tipo de mascota: {this.props.tipo}, edad: {this.props.age}</p>
+				<p>Nombre: {name}, tipo de mascota: {tipo}, edad: {age}</p>
 			)
 	}
 }
