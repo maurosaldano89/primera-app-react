@@ -5,9 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />, // React crea una instancia de esta clase App. Similar a const app = new App()
   document.getElementById('root')
 );
 
