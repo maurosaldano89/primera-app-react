@@ -11,9 +11,12 @@ class App extends React.Component {
           <Persona name='Mauro S' age='32' />
         </ul>
         <ul>
-          <Mascota name='Tito' tipo='Perro' age={3}/>
-          <Mascota name='Pipo' tipo='Gato' age={5}/>
-          <Mascota name='Pepe' tipo='Loro' age={2}/>
+          <Mascota name='Tito' tipo='Perro' age={3} vacunas={[
+            {'name' : 'moquillo'},
+            {'name' : 'antirrabica'}
+          ]}/>
+          <Mascota name='Pipo' tipo='Gato' vacunas={[]} />
+          <Mascota name='Pepe' tipo='Loro' age={2} />
         </ul>
       </div>
     )
