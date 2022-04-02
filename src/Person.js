@@ -6,9 +6,9 @@ class Person extends React.Component {
   }
 
   render() {
-    const {name, id} = this.props.person;
+    const {name} = this.props.person;
     return (
-      <li >Nombre: {name}, Id: {id}</li>
+      <li >Nombre: {name}</li>
     );
   }
 }

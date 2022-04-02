@@ -5,21 +5,16 @@ class PeopleList extends React.Component {
 	constructor(props){
 		super(props);
 		this.people = [
-      {'name' : 'Pepe',
-      'id' : '25164651'
-    },
-      {'name' : 'Luis',
-      'id' : '51166651'
-    },
-      {'name' : 'Jorge',
-      'id' : '12346841'
-    }
+      {'name' : 'Pepe'},
+      {'name' : 'Luis'},
+      {'name' : 'Jorge'},
+      {'name' : 'Jorge'}
     ];
 	}
 
 	render() {
-		const peopleList = this.people.map((person) => {
-			return <Person key={person.id} person={person} />
+		const peopleList = this.people.map((person, idx) => {
+			return <Person key={idx} person={person} />
 		});
 
 		return (
