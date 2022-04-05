@@ -24,3 +24,5 @@ class PeopleList extends React.Component {
 }
 
 export default PeopleList;
+
+//hacer una app desde cero react y definir un componente con ListadoDeElectrodomesticos que itere componentes Electrodomesticos
