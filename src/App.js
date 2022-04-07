@@ -8,7 +8,7 @@ class App extends React.Component {
     return ( // render retorna html. Retorna solo 1 elemento padre
       <div>
         <ListHomeAppliances />
-        <SmartphoneList />
+        {/*<SmartphoneList />*/}
       </div>
     );
   }
