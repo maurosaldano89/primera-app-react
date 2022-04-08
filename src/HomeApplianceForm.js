@@ -31,7 +31,9 @@ class HomeApplianceForm extends React.Component{
 	}
 
 	handleWeightChange = (event) => {
-		const newWeight = event.currentTarget.value
+		const input = event.currentTarget;
+		//CURRENTTARGET ES EL ELEMENTO QUE DISPARA EL HTML
+		const newWeight = input.value
 		this.setState({
 			weight: newWeight
 		})
@@ -41,7 +43,7 @@ class HomeApplianceForm extends React.Component{
 		const {name, weight} = this.state;
 
 		return (
-			<form>
+			<form onSubmit={this.onFormSubmit}>
 				<h2>
 					Crear nuevo electrodomestico
 				</h2>
@@ -56,7 +58,7 @@ class HomeApplianceForm extends React.Component{
 					<input value={weight} onChange={this.handleWeightChange}/>
 				</div>
 
-				<button onClick={this.onFormSubmit}>
+				<button>
 					Guardar
 				</button>
 			</form>

@@ -10,7 +10,7 @@ class HomeAppliance extends React.Component{
 		return(
 			<li>
 				Nombre de electrodomestico: {name} , peso: {peso} kg
-				<a href='#' onClick={deleteFunc} >Eliminar</a>
+				<a href='#' onClick={deleteFunc} >Eliminar</a> {/*LLAMA FUNCION DEL PADRE*/}
 			</li>
 			);
 	}
