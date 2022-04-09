@@ -5,12 +5,13 @@ class HomeAppliance extends React.Component{
 		super(props)
 	}
 	render(){
-		const {appliance, deleteFunc} = this.props;
-		const {name, peso} = appliance;
+		const {appliance, deleteFunc, onEdit} = this.props;
+		const {name, weight} = appliance;
 		return(
 			<li>
-				Nombre de electrodomestico: {name} , peso: {peso} kg
+				Nombre de electrodomestico: {name} , peso: {weight} kg
 				<a href='#' onClick={deleteFunc} >Eliminar</a> {/*LLAMA FUNCION DEL PADRE*/}
+				<a href='#' onClick={onEdit} >Modificar</a>
 			</li>
 			);
 	}
